@@ -1,45 +1,53 @@
 /*
-    Copyright (c) 2007 Stefan Engelke <mbox@stefanengelke.de>
+ Copyright (c) 2007 Stefan Engelke <mbox@stefanengelke.de>
 	Portions Copyright (C) 2011 Greg Copeland
+ 
+ 
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use, copy,
+ modify, merge, publish, distribute, sublicense, and/or sell copies
+ of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ 
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ 
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ DEALINGS IN THE SOFTWARE.
+ */
 
-    Permission is hereby granted, free of charge, to any person
-    obtaining a copy of this software and associated documentation
-    files (the "Software"), to deal in the Software without
-    restriction, including without limitation the rights to use, copy,
-    modify, merge, publish, distribute, sublicense, and/or sell copies
-    of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be
-    included in all copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-    DEALINGS IN THE SOFTWARE.
-*/
 
 /* Memory Map */
 #ifndef __nrf24l01p_H__
 #define __nrf24l01p_H__
 
+
 // TODO: START HERE
 // use the memory map to figure out the mappings of the following defines
 
-#define CONFIG      
-#define EN_AA       
-#define SETUP_RETR  
-#define RF_CH       
-#define RF_SETUP    
-#define SETUP_AW    
-#define NRF_STATUS  
-#define FIFO_STATUS 
+
+#define CONFIG      0x00
+#define EN_AA       0x01
+#define SETUP_RETR  0x04
+#define RF_CH       0x05
+#define RF_SETUP    0x06
+#define SETUP_AW    0x03
+#define NRF_STATUS  0x07
+#define FIFO_STATUS 0x17
+
 
 // TODO: END HERE
+
 
 #define EN_RXADDR   0x02
 #define OBSERVE_TX  0x08
@@ -59,6 +67,7 @@
 #define RX_PW_P5    0x16
 #define DYNPD	    0x1C
 #define FEATURE	    0x1D
+
 
 /* Bit Mnemonics */
 #define MASK_RX_DR  6
@@ -108,6 +117,7 @@
 #define EN_ACK_PAY  1
 #define EN_DYN_ACK  0
 
+
 /* Instruction Mnemonics */
 #define R_REGISTER    0x00
 #define W_REGISTER    0x20
@@ -122,12 +132,15 @@
 #define REUSE_TX_PL   0xE3
 #define NOP           0xFF
 
+
 /* Non-P omissions */
 #define LNA_HCURR   0
+
 
 /* P model memory Map */
 #define RPD         0x09
 #define W_TX_PAYLOAD_NO_ACK  0xB0
+
 
 /* P model bit Mnemonics */
 #define RF_DR_LOW   5
@@ -135,3 +148,5 @@
 #define RF_PWR_LOW  1
 #define RF_PWR_HIGH 2
 #endif
+
+
