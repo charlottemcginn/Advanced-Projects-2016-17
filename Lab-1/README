@@ -1,3 +1,9 @@
 Lab 1: Serial Space Team
 
 Checkpoint 1: Write a sketch to send a character via the serial terminal of the teensy and turn on the onboard led (pin 13) on the pro mini when data is received.
+
+Checkpoint 2: Write a sketch to toggle the red, green, or yellow LEDs on/off by sending the character ‘R’, ’G’, or ‘Y’, respectively, from the serial terminal of the Arduino Pro Mini.
+
+Checkpoint 3: Write a sketch to light up each LED on the Teensy while its corresponding button on the Pro Mini is pressed down. When a button is released, the LED should turn off.
+
+Checkpoint 4: Implement a fully working version of the Space Team game adhering to the above requirements.
