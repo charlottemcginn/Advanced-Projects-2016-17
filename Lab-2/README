@@ -1,0 +1,9 @@
+Lab 2: Wireless Space Team
+
+Checkpoint 1: Solder the Teensy side of the Space Team Game to the brown perfboard and wire the arduino side on the breadboard.
+
+Checkpoint 2: Modify all of the defines and specific parts of the RF24 library that are marked with TODO.
+
+Checkpoint 3: Using a struct, send data from one device to the other device over the radio modules as described in the paragraph above.
+
+Checkpoint 4: Implement a fully working version of the Space Team game adhering to the above requirements. You will be required to redo this checkpoint if you do not adhere to the requirements.
