@@ -1,6 +1,6 @@
-#define yellow 14
-#define green 15
-#define red 16
+#define yellow 11
+#define green 10
+#define red 12
 
 uint16_t randNum;
 char seq[20];
