@@ -5,3 +5,7 @@ Checkpoint 1: Implement the battery monitoring circuit described above on a brea
 Checkpoint 2: Perfboard the entire Air Mouse.
 
 Checkpoint 3: Using a struct, send button clicks and battery voltage level from the air mouse to the receiver. Print out the button clicks on the Serial Terminal on the receiver and display the battery voltage level using the LEDs.
+
+Checkpoint 4: Implement the above 5 helper functions correctly and print out accelerometer data on the teensy. 
+
+Checkpoint 5: Demonstrate that you have a working air mouse with smooth cursor movement corresponding to the orientation of the device, button clicks when a button is pressed, and click and drag functionality.
